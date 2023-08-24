@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="/CSS/menu_responsivo.css">
+    <title>Menu Responsivo</title>
+</head>
+
+<body>
+    <span id="botaoMenu" class="material-symbols-outlined" onclick="exibirMenu()">Menu</span>
+    <span id="botaoFechar" class="material-symbols-outlined" onclick="fecharMenu()">close</span>
+
+    <header>
+        <img src="imagens/logo.svg" alt="Logotipo">
+        <nav>
+            <ul id="menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">QUEM SOMOS</a></li>
+                <li><a href="#">PRODUTOS</a></li>
+                <li><a href="#">FALE CONOSCO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro ut, facilis reprehenderit cum odit animi
+            assumenda. Voluptatibus odio eveniet laboriosam aut dignissimos! Eos, repellendus nemo possimus qui
+            recusandae sed excepturi.</p>
+    </main>
+
+    <script>
+        // FUNÇÃO PARA: OCULTAR O BT MENU E EXIBIR O BT FECHAR E O MENU
+        function exibirMenu() {
+            botaoMenu.style.display = "none"
+            botaoFechar.style.display = "block"
+            menu.style.display = "block"
+        }
+        function fecharMenu() {
+            botaoMenu.style.display = "block"
+            botaoFechar.style.display = "none"
+            menu.style.display = "none"
+        }
+
+        // FUNÇÃO QUE VAI VERIFICAR SE HOUVE REDIMENSIONAMENTO DA TELA
+
+        function verificarLarguraTela() {
+            var larguraTela = window.innerWidth
+
+            if (larguraTela < 1120) {
+                botaoMenu.style.display = "block"
+                botaoFechar.style.display = "none"
+                menu.style.display = "none"
+            }
+            else {
+                botaoMenu.style.display = "none"
+                botaoFechar.style.display = "none"
+                menu.style.display = "flex"
+            }
+        }
+        window.addEventListener("resize", verificarLarguraTela)
+    </script>
+</body>
+
+</html>

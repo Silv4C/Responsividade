@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+    <style>
+        /*GLOBAL*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section {
+            background-color: darkslateblue;
+            padding: 1rem;
+        }
+
+        article {
+            width: 100%;
+            background-color: darkcyan;
+            border-radius: 10px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            
+        }
+
+        img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        p {
+            color: white;
+            padding: 0.5rem;
+            font-size: 1.5rem;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+
+
+        /*BREAKPOINT DESKTOP*/
+
+        @media(min-width:1120px){
+            section{
+                display: flex;
+                padding: 0.5rem;
+                max-width: 1120px;
+            }
+            article{
+                margin: 0.5rem;
+            }
+            body{
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <section>
+        <article>
+            <img src="imagens/the-illusionist.png" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis at quidem porro itaque eum facilis
+                quaerat tenetur unde aliquid, perspiciatis labore nostrum necessitatibus error! Adipisci quo quisquam
+                harum architecto perferendis.</p>
+        </article>
+        
+        <article>
+            <img src="imagens/the-illusionist.png" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis at quidem porro itaque eum facilis
+                quaerat tenetur unde aliquid, perspiciatis labore nostrum necessitatibus error! Adipisci quo quisquam
+                harum architecto perferendis.</p>
+        </article>
+        
+        <article>
+            <img src="imagens/the-illusionist.png" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis at quidem porro itaque eum facilis
+                quaerat tenetur unde aliquid, perspiciatis labore nostrum necessitatibus error! Adipisci quo quisquam
+                harum architecto perferendis.</p>
+        </article>
+        
+        <article>
+            <img src="imagens/the-illusionist.png" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis at quidem porro itaque eum facilis
+                quaerat tenetur unde aliquid, perspiciatis labore nostrum necessitatibus error! Adipisci quo quisquam
+                harum architecto perferendis.</p>
+        </article>
+
+    </section>
+</body>
+
+</html>
